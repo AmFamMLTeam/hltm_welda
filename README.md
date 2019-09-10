@@ -1,9 +1,9 @@
-# Human in the Loop Topic Model Latent Dirichlet Allocation (HL-WELDA)
+# Human in the Loop Topic Model Latent Dirichlet Allocation (HLTM-WELDA)
 
 ## Getting Started
 
 ### Environment
-Be sure to have the environment set up running `conda env create -f environment.yml` from the base directory (`hl_welda`). Also be sure to have the environment activated by running `conda activate hl_welda`.
+Be sure to have the environment set up running `conda env create -f environment.yml` from the base directory (`hltm_welda`). Also be sure to have the environment activated by running `conda activate hltm_welda`.
 
 
 ### Setup
