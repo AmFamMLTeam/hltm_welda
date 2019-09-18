@@ -7,7 +7,7 @@ Be sure to set up the [Anaconda](https://anaconda.org/) environment by running `
 
 
 ### Setup
-If on a Mac, chances are that there might be issues with `gcc` due to changes Apple has made to Xcode. [This](https://stackoverflow.com/questions/52509602/ant-compile-c-program-on-a-mac-after-upgrade-to-mojave) is a good lead to how to deal with this.
+If on a Mac, chances are that there might be issues with `gcc` due to [changes](https://developer.apple.com/documentation/xcode_release_notes/xcode_10_release_notes) Apple has made to Xcode. [This](https://stackoverflow.com/questions/52509602/ant-compile-c-program-on-a-mac-after-upgrade-to-mojave) is a good lead to how to deal with this.
 
 After setting up the environment, run `bash setup.sh`. This sets up the `sqlite3` database and compiles Cython code into C.
 
