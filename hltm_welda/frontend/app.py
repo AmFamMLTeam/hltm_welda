@@ -1634,6 +1634,7 @@ def topic_name_map_factory(topic_name_dict, topic_key):
     Output('topic_list', 'children'),
     [Input('topics', 'children'),
     Input('merge_success', 'children'),
+    Input('split_success', 'children'),
     Input('stopwords_success', 'n_clicks'),
     Input('remove_word_topic_button', 'n_clicks'),
     Input('remove_doc_corpus_success', 'n_clicks'),

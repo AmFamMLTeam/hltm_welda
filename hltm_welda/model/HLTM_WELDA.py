@@ -1000,13 +1000,8 @@ class HLTM_WELDA(object):
             for w in new_topic_seed_words
         ])
 
-        idx_replace = (self.Nt == new_topic_seed_words_id.reshape(-1, 1)).any(axis=0)
-        self.Nt[idx_replace] = np.random.randint(
-            low=0,
-            high=self.K,
-            size=idx_replace.sum(),
-            dtype='int',
-        )
+        idx_replace = (self.Nw == new_topic_seed_words_id.reshape(-1, 1)).any(axis=0)
+        self.Nt[idx_replace] = self.K - 1
 
         # add column to alpha (document-topic prior): one new column for new topic
         self.alpha = np.concatenate(
@@ -1037,6 +1032,10 @@ class HLTM_WELDA(object):
             ),
             axis=0
         )
+
+        self.form_wt()
+        self.form_wt_copy()
+        self.form_dt()
 
         self.fit_cython(
             iterations=1,

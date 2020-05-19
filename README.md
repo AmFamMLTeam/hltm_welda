@@ -3,7 +3,7 @@
 ## Getting Started
 
 ### Environment
-Be sure to set up the [Anaconda](https://anaconda.org/) environment by running `conda env create -f environment.yml` from the base directory (`hltm_welda`). Also be sure to have the environment activated by running `conda activate hltm_welda`.
+This project used Python 3.6.8. The python package dependencies can be found in `requirements.txt`. Be sure to create an environment and activate it before proceeding. This project used [`pyenv`](https://github.com/pyenv/pyenv) and [`pyenv-virtualenv`](https://github.com/pyenv/pyenv-virtualenv) for python version and package management.
 
 
 ### Setup
