@@ -22,7 +22,7 @@ docutils==0.15.2
 entrypoints==0.3
 Flask==1.1.2
 Flask-Compress==1.5.0
-Flask-Cors==3.0.8
+Flask-Cors==3.0.9
 future==0.18.2
 gensim==3.8.3
 idna==2.9
